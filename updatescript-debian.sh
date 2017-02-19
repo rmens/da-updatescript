@@ -1,0 +1,11 @@
+ntpdate ntp.xs4all.nl;
+apt-get update -y;
+apt-get ugrade -y;
+apt-get autoremove -y;
+/usr/local/directadmin/custombuild/build clean;
+/usr/local/directadmin/custombuild/build clean_old_webapps;
+/usr/local/directadmin/custombuild/build update_script;
+/usr/local/directadmin/custombuild/build update;
+/usr/local/directadmin/custombuild/build update_versions;
+echo "DONE";
+exit;
